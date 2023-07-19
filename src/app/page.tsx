@@ -1,13 +1,12 @@
+"use client";
+
 import React from "react";
-import { useEffect } from "react";
 import { Header } from "@/components/header";
 import { Connection } from "@/components/connection";
 import { usePostNote } from "@crossbell/connect-kit";
 
 export default function IndexPage() {
   const postNote = usePostNote();
-
-  useEffect(() => {}, []);
   return (
     <div>
       <Header />
