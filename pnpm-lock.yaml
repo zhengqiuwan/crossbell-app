@@ -2,18 +2,22 @@ lockfileVersion: 5.4
 
 specifiers:
   '@crossbell/connect-kit': 1.5.0
+  '@crossbell/indexer': 1.4.6
   '@crossbell/ipfs-gateway': 0.0.19
   '@crossbell/ipfs-gateway-next': 0.0.19
   '@crossbell/ipfs-react': 0.0.19
   '@crossbell/notification': 1.5.0
   '@crossbell/ui': 1.5.0
   '@crossbell/util-metadata': 1.5.0
-  '@tanstack/react-query': 4.29.19
+  '@mantine/core': 6.0.14
+  '@tanstack/react-query': 4.29.25
   '@types/lodash.compact': 3.0.7
   '@types/node': 20.4.1
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
+  '@wagmi/core': ^1.3.8
   autoprefixer: 10.4.14
+  crossbell: 1.4.0
   eslint: 8.44.0
   eslint-config-next: 13.4.9
   eslint-config-prettier: 8.8.0
@@ -25,23 +29,29 @@ specifiers:
   react-dom: 18.2.0
   tailwindcss: 3.3.2
   typescript: 5.1.6
+  viem: ^1.3.0
   wagmi: 1.3.8
 
 dependencies:
-  '@crossbell/connect-kit': registry.npmmirror.com/@crossbell/connect-kit/1.5.0_qfmzi25igbnstbdpjswhgmqhe4
+  '@crossbell/connect-kit': registry.npmmirror.com/@crossbell/connect-kit/1.5.0_yomn6thqtanutajpo6yuhfoofe
+  '@crossbell/indexer': registry.npmmirror.com/@crossbell/indexer/1.4.6_i4rjfizg7pnsmg7p6yi76gfzdq
   '@crossbell/ipfs-gateway': registry.npmmirror.com/@crossbell/ipfs-gateway/0.0.19
   '@crossbell/ipfs-react': registry.npmmirror.com/@crossbell/ipfs-react/0.0.19_shlytogbdhtjr7iatp5oizvise
-  '@crossbell/notification': registry.npmmirror.com/@crossbell/notification/1.5.0_pnucgtiehn3y7js6badaup6cbq
+  '@crossbell/notification': registry.npmmirror.com/@crossbell/notification/1.5.0_pbzqnvv3wnlmehwnrdl3lumw2m
   '@crossbell/ui': registry.npmmirror.com/@crossbell/ui/1.5.0_xvwrz76gf3y2fkkjcobhgmjciy
   '@crossbell/util-metadata': registry.npmmirror.com/@crossbell/util-metadata/1.5.0_typescript@5.1.6
-  '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+  '@mantine/core': registry.npmmirror.com/@mantine/core/6.0.14_qzycrpzqvmvb7wd2jdibmpq2cy
+  '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
+  '@wagmi/core': registry.npmmirror.com/@wagmi/core/1.3.8_6cove7vqcs6tkru3ysikw7vh3e
+  crossbell: registry.npmmirror.com/crossbell/1.4.0_typescript@5.1.6
   eslint: registry.npmmirror.com/eslint/8.44.0
   eslint-config-next: registry.npmmirror.com/eslint-config-next/13.4.9_iqf7tbmerllfqanu4l3d6aqdn4
   next: registry.npmmirror.com/next/13.4.9_biqbaboplfbrettd7655fr4n2y
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   typescript: registry.npmmirror.com/typescript/5.1.6
-  wagmi: registry.npmmirror.com/wagmi/1.3.8_i4rjfizg7pnsmg7p6yi76gfzdq
+  viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
+  wagmi: registry.npmmirror.com/wagmi/1.3.8_bpv3i7fim52ykx2flbxcqwwscq
 
 devDependencies:
   '@crossbell/ipfs-gateway-next': registry.npmmirror.com/@crossbell/ipfs-gateway-next/0.0.19_next@13.4.9
@@ -170,7 +180,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  registry.npmmirror.com/@crossbell/connect-kit/1.5.0_qfmzi25igbnstbdpjswhgmqhe4:
+  registry.npmmirror.com/@crossbell/connect-kit/1.5.0_yomn6thqtanutajpo6yuhfoofe:
     resolution: {integrity: sha512-QGm6juNuWy6fvInpKLDGHQQSwDT/vdhGjDaL6u2IVr6T4A1BgMy6jmyRifSch3IPsr7rhiHJLu4HPDGLg3wdIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@crossbell/connect-kit/-/connect-kit-1.5.0.tgz}
     id: registry.npmmirror.com/@crossbell/connect-kit/1.5.0
     name: '@crossbell/connect-kit'
@@ -181,18 +191,18 @@ packages:
     dependencies:
       '@crossbell/contract': registry.npmmirror.com/@crossbell/contract/1.5.3_i4rjfizg7pnsmg7p6yi76gfzdq
       '@crossbell/indexer': registry.npmmirror.com/@crossbell/indexer/1.5.3_i4rjfizg7pnsmg7p6yi76gfzdq
-      '@crossbell/react-account': registry.npmmirror.com/@crossbell/react-account/1.5.3_la7hkcyd5z6mf2fuiex3pi24ee
+      '@crossbell/react-account': registry.npmmirror.com/@crossbell/react-account/1.5.3_yc7kzmxm7cw6b6ooraehq5bqaq
       '@crossbell/ui': registry.npmmirror.com/@crossbell/ui/1.5.0_xvwrz76gf3y2fkkjcobhgmjciy
       '@crossbell/util-ethers': registry.npmmirror.com/@crossbell/util-ethers/1.5.2
       '@crossbell/util-hooks': registry.npmmirror.com/@crossbell/util-hooks/1.5.2_i4rjfizg7pnsmg7p6yi76gfzdq
       '@crossbell/util-metadata': registry.npmmirror.com/@crossbell/util-metadata/1.5.0_typescript@5.1.6
       '@emotion/react': registry.npmmirror.com/@emotion/react/11.11.1_i73ekzlbntu7jol6ph2fvy4mga
-      '@mantine/core': registry.npmmirror.com/@mantine/core/6.0.17_wy2mtfh35weizy3hdzwzkfsqoi
+      '@mantine/core': registry.npmmirror.com/@mantine/core/6.0.14_wy2mtfh35weizy3hdzwzkfsqoi
       '@mantine/hooks': registry.npmmirror.com/@mantine/hooks/6.0.17_react@18.2.0
-      '@mantine/notifications': registry.npmmirror.com/@mantine/notifications/6.0.17_rbna6yjd7rnbwkhb3mazkwzgv4
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@mantine/notifications': registry.npmmirror.com/@mantine/notifications/6.0.17_sje4fcu7e474l65mj5rw2qv4gq
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
       '@wagmi/connectors': registry.npmmirror.com/@wagmi/connectors/2.6.6_6cove7vqcs6tkru3ysikw7vh3e
-      '@web3modal/ethereum': registry.npmmirror.com/@web3modal/ethereum/2.7.0_viem@1.3.0
+      '@web3modal/ethereum': registry.npmmirror.com/@web3modal/ethereum/2.7.0_6xilvirq2usfrz5j2v5kkh6uxa
       canvas-confetti: registry.npmmirror.com/canvas-confetti/1.6.0
       check-password-strength: registry.npmmirror.com/check-password-strength/2.0.7
       classnames: registry.npmmirror.com/classnames/2.3.2
@@ -209,7 +219,7 @@ packages:
       rxjs: registry.npmmirror.com/rxjs/7.8.1
       ts-essentials: registry.npmmirror.com/ts-essentials/9.3.2_typescript@5.1.6
       viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
-      wagmi: registry.npmmirror.com/wagmi/1.3.8_i4rjfizg7pnsmg7p6yi76gfzdq
+      wagmi: registry.npmmirror.com/wagmi/1.3.8_bpv3i7fim52ykx2flbxcqwwscq
       zustand: registry.npmmirror.com/zustand/4.3.9_immer@10.0.2+react@18.2.0
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
@@ -249,13 +259,35 @@ packages:
       - zod
     dev: false
 
+  registry.npmmirror.com/@crossbell/indexer/1.4.6_i4rjfizg7pnsmg7p6yi76gfzdq:
+    resolution: {integrity: sha512-C/PPKv4VVA5AY65TzM0EtErWUZ3XE50f+RL91llURnMUjQdrbWeh6J91jnmXKO36e0eaTTjhCExzKrPm5ZSULw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@crossbell/indexer/-/indexer-1.4.6.tgz}
+    id: registry.npmmirror.com/@crossbell/indexer/1.4.6
+    name: '@crossbell/indexer'
+    version: 1.4.6
+    dependencies:
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
+      crossbell: registry.npmmirror.com/crossbell/1.4.0_typescript@5.1.6
+      dayjs: registry.npmmirror.com/dayjs/1.11.9
+      lodash.compact: registry.npmmirror.com/lodash.compact/3.0.1
+      lru-cache: registry.npmmirror.com/lru-cache/10.0.0
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
+    transitivePeerDependencies:
+      - bufferutil
+      - react
+      - react-dom
+      - react-native
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
   registry.npmmirror.com/@crossbell/indexer/1.5.3_i4rjfizg7pnsmg7p6yi76gfzdq:
     resolution: {integrity: sha512-53Lm/HPz2h57cfJEL6nf2TtExCVM2J/OtccENiIo0/+2vUYDX/HYSehc/n9sfBUfKcfbVovJbIa0vOIfW68fvg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@crossbell/indexer/-/indexer-1.5.3.tgz}
     id: registry.npmmirror.com/@crossbell/indexer/1.5.3
     name: '@crossbell/indexer'
     version: 1.5.3
     dependencies:
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
       crossbell: registry.npmmirror.com/crossbell/1.4.2_typescript@5.1.6
       dayjs: registry.npmmirror.com/dayjs/1.11.9
       lodash.compact: registry.npmmirror.com/lodash.compact/3.0.1
@@ -327,7 +359,7 @@ packages:
       react: registry.npmmirror.com/react/18.2.0
     dev: false
 
-  registry.npmmirror.com/@crossbell/notification/1.5.0_pnucgtiehn3y7js6badaup6cbq:
+  registry.npmmirror.com/@crossbell/notification/1.5.0_pbzqnvv3wnlmehwnrdl3lumw2m:
     resolution: {integrity: sha512-kvMKSaF4qD/LAv78aAFdvP1E7/cM+cW4d0SYP9hv1QWcr1YDbsYahjDbodylWcPdejG2QFSYW1x3sDBWKrjHYg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@crossbell/notification/-/notification-1.5.0.tgz}
     id: registry.npmmirror.com/@crossbell/notification/1.5.0
     name: '@crossbell/notification'
@@ -338,17 +370,17 @@ packages:
       wagmi: ^1.0.0
     dependencies:
       '@crossbell/indexer': registry.npmmirror.com/@crossbell/indexer/1.5.3_i4rjfizg7pnsmg7p6yi76gfzdq
-      '@crossbell/react-account': registry.npmmirror.com/@crossbell/react-account/1.5.3_la7hkcyd5z6mf2fuiex3pi24ee
+      '@crossbell/react-account': registry.npmmirror.com/@crossbell/react-account/1.5.3_yc7kzmxm7cw6b6ooraehq5bqaq
       '@crossbell/ui': registry.npmmirror.com/@crossbell/ui/1.5.0_xvwrz76gf3y2fkkjcobhgmjciy
       '@crossbell/util-hooks': registry.npmmirror.com/@crossbell/util-hooks/1.5.2_i4rjfizg7pnsmg7p6yi76gfzdq
       '@crossbell/util-metadata': registry.npmmirror.com/@crossbell/util-metadata/1.5.0_typescript@5.1.6
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: registry.npmmirror.com/dayjs/1.11.9
       react: registry.npmmirror.com/react/18.2.0
       react-intersection-observer: registry.npmmirror.com/react-intersection-observer/9.5.2_react@18.2.0
       viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
-      wagmi: registry.npmmirror.com/wagmi/1.3.8_i4rjfizg7pnsmg7p6yi76gfzdq
+      wagmi: registry.npmmirror.com/wagmi/1.3.8_bpv3i7fim52ykx2flbxcqwwscq
       zustand: registry.npmmirror.com/zustand/4.3.9_react@18.2.0
     transitivePeerDependencies:
       - '@types/react'
@@ -361,7 +393,7 @@ packages:
       - zod
     dev: false
 
-  registry.npmmirror.com/@crossbell/react-account/1.5.3_la7hkcyd5z6mf2fuiex3pi24ee:
+  registry.npmmirror.com/@crossbell/react-account/1.5.3_yc7kzmxm7cw6b6ooraehq5bqaq:
     resolution: {integrity: sha512-Vg/7g1Rw+fOccFl3Gf08de0pkQDcVbxiTj0JswlfRtsa6Wc28y4dv5hDabOPSO3omxCXaYfqQPRayr9D8LQ7Gg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@crossbell/react-account/-/react-account-1.5.3.tgz}
     id: registry.npmmirror.com/@crossbell/react-account/1.5.3
     name: '@crossbell/react-account'
@@ -374,7 +406,7 @@ packages:
       '@crossbell/util-ethers': registry.npmmirror.com/@crossbell/util-ethers/1.5.2
       '@crossbell/util-hooks': registry.npmmirror.com/@crossbell/util-hooks/1.5.2_i4rjfizg7pnsmg7p6yi76gfzdq
       '@crossbell/util-metadata': registry.npmmirror.com/@crossbell/util-metadata/1.5.2_typescript@5.1.6
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
       check-password-strength: registry.npmmirror.com/check-password-strength/2.0.7
       crossbell: registry.npmmirror.com/crossbell/1.4.2_typescript@5.1.6
       immer: registry.npmmirror.com/immer/10.0.2
@@ -405,7 +437,7 @@ packages:
       '@crossbell/indexer': registry.npmmirror.com/@crossbell/indexer/1.5.3_i4rjfizg7pnsmg7p6yi76gfzdq
       '@crossbell/util-hooks': registry.npmmirror.com/@crossbell/util-hooks/1.5.2_i4rjfizg7pnsmg7p6yi76gfzdq
       '@crossbell/util-metadata': registry.npmmirror.com/@crossbell/util-metadata/1.5.0_typescript@5.1.6
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
       classnames: registry.npmmirror.com/classnames/2.3.2
       crossbell: registry.npmmirror.com/crossbell/1.4.2_typescript@5.1.6
       facepaint: registry.npmmirror.com/facepaint/1.2.1
@@ -438,7 +470,7 @@ packages:
     peerDependencies:
       react: ^18
     dependencies:
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
       crossbell: registry.npmmirror.com/crossbell/1.4.2_typescript@5.1.6
       react: registry.npmmirror.com/react/18.2.0
     transitivePeerDependencies:
@@ -785,20 +817,43 @@ packages:
       '@lit-labs/ssr-dom-shim': registry.npmmirror.com/@lit-labs/ssr-dom-shim/1.1.1
     dev: false
 
-  registry.npmmirror.com/@mantine/core/6.0.17_wy2mtfh35weizy3hdzwzkfsqoi:
-    resolution: {integrity: sha512-g3EDxcTJKisvEGTsGJPCGXiDumwr4O0nGNXwoGLnrg19nh3FAMfEIq18sJJLtRrBuarSbrvgMVYvKx1R6rTOWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/core/-/core-6.0.17.tgz}
-    id: registry.npmmirror.com/@mantine/core/6.0.17
+  registry.npmmirror.com/@mantine/core/6.0.14_qzycrpzqvmvb7wd2jdibmpq2cy:
+    resolution: {integrity: sha512-O916itwsB5XtEStVZRqp3SlB4aLM0sSgOFYYCVnLJ3E9O9E8h1xhaNEml1FJbMtrlNaXYUd6sy/OSRqNl9DyKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/core/-/core-6.0.14.tgz}
+    id: registry.npmmirror.com/@mantine/core/6.0.14
     name: '@mantine/core'
-    version: 6.0.17
+    version: 6.0.14
     peerDependencies:
-      '@mantine/hooks': 6.0.17
+      '@mantine/hooks': 6.0.14
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@floating-ui/react': registry.npmmirror.com/@floating-ui/react/0.19.2_biqbaboplfbrettd7655fr4n2y
+      '@mantine/styles': registry.npmmirror.com/@mantine/styles/6.0.14_biqbaboplfbrettd7655fr4n2y
+      '@mantine/utils': registry.npmmirror.com/@mantine/utils/6.0.14_react@18.2.0
+      '@radix-ui/react-scroll-area': registry.npmmirror.com/@radix-ui/react-scroll-area/1.0.2_biqbaboplfbrettd7655fr4n2y
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-remove-scroll: registry.npmmirror.com/react-remove-scroll/2.5.6_i73ekzlbntu7jol6ph2fvy4mga
+      react-textarea-autosize: registry.npmmirror.com/react-textarea-autosize/8.3.4_i73ekzlbntu7jol6ph2fvy4mga
+    transitivePeerDependencies:
+      - '@emotion/react'
+      - '@types/react'
+    dev: false
+
+  registry.npmmirror.com/@mantine/core/6.0.14_wy2mtfh35weizy3hdzwzkfsqoi:
+    resolution: {integrity: sha512-O916itwsB5XtEStVZRqp3SlB4aLM0sSgOFYYCVnLJ3E9O9E8h1xhaNEml1FJbMtrlNaXYUd6sy/OSRqNl9DyKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/core/-/core-6.0.14.tgz}
+    id: registry.npmmirror.com/@mantine/core/6.0.14
+    name: '@mantine/core'
+    version: 6.0.14
+    peerDependencies:
+      '@mantine/hooks': 6.0.14
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/react': registry.npmmirror.com/@floating-ui/react/0.19.2_biqbaboplfbrettd7655fr4n2y
       '@mantine/hooks': registry.npmmirror.com/@mantine/hooks/6.0.17_react@18.2.0
-      '@mantine/styles': registry.npmmirror.com/@mantine/styles/6.0.17_nszyvgl4h3pepfjfj5l4beb4my
-      '@mantine/utils': registry.npmmirror.com/@mantine/utils/6.0.17_react@18.2.0
+      '@mantine/styles': registry.npmmirror.com/@mantine/styles/6.0.14_nszyvgl4h3pepfjfj5l4beb4my
+      '@mantine/utils': registry.npmmirror.com/@mantine/utils/6.0.14_react@18.2.0
       '@radix-ui/react-scroll-area': registry.npmmirror.com/@radix-ui/react-scroll-area/1.0.2_biqbaboplfbrettd7655fr4n2y
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
@@ -820,7 +875,7 @@ packages:
       react: registry.npmmirror.com/react/18.2.0
     dev: false
 
-  registry.npmmirror.com/@mantine/notifications/6.0.17_rbna6yjd7rnbwkhb3mazkwzgv4:
+  registry.npmmirror.com/@mantine/notifications/6.0.17_sje4fcu7e474l65mj5rw2qv4gq:
     resolution: {integrity: sha512-iY8hdRG4RcrsA7U06AOWLbKrQJAzEhKi2mESOnGE4s7RBWJjLTXJf+gTKi+QtVa3XNIF0I/adpEh8MEFD5zGWw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/notifications/-/notifications-6.0.17.tgz}
     id: registry.npmmirror.com/@mantine/notifications/6.0.17
     name: '@mantine/notifications'
@@ -831,7 +886,7 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@mantine/core': registry.npmmirror.com/@mantine/core/6.0.17_wy2mtfh35weizy3hdzwzkfsqoi
+      '@mantine/core': registry.npmmirror.com/@mantine/core/6.0.14_wy2mtfh35weizy3hdzwzkfsqoi
       '@mantine/hooks': registry.npmmirror.com/@mantine/hooks/6.0.17_react@18.2.0
       '@mantine/utils': registry.npmmirror.com/@mantine/utils/6.0.17_react@18.2.0
       react: registry.npmmirror.com/react/18.2.0
@@ -839,11 +894,27 @@ packages:
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.2_biqbaboplfbrettd7655fr4n2y
     dev: false
 
-  registry.npmmirror.com/@mantine/styles/6.0.17_nszyvgl4h3pepfjfj5l4beb4my:
-    resolution: {integrity: sha512-utNwQJgKHguNS0iPyyeFRJy4nbt280XMbmfUf4GCxXlyl/mQxq+JoaKP/OmU7+8kfbtLS9kHeuBSghrC65Nt1g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/styles/-/styles-6.0.17.tgz}
-    id: registry.npmmirror.com/@mantine/styles/6.0.17
+  registry.npmmirror.com/@mantine/styles/6.0.14_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-qkqUodvVPzthmVzWQHYe/yWrc8UZcz8A5KfegK2Ps67bZzfoZs/NBVcEx6REq8HTsISjYw3jJyMRxAE3G7Ms4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/styles/-/styles-6.0.14.tgz}
+    id: registry.npmmirror.com/@mantine/styles/6.0.14
     name: '@mantine/styles'
-    version: 6.0.17
+    version: 6.0.14
+    peerDependencies:
+      '@emotion/react': '>=11.9.0'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      clsx: registry.npmmirror.com/clsx/1.1.1
+      csstype: registry.npmmirror.com/csstype/3.0.9
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@mantine/styles/6.0.14_nszyvgl4h3pepfjfj5l4beb4my:
+    resolution: {integrity: sha512-qkqUodvVPzthmVzWQHYe/yWrc8UZcz8A5KfegK2Ps67bZzfoZs/NBVcEx6REq8HTsISjYw3jJyMRxAE3G7Ms4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/styles/-/styles-6.0.14.tgz}
+    id: registry.npmmirror.com/@mantine/styles/6.0.14
+    name: '@mantine/styles'
+    version: 6.0.14
     peerDependencies:
       '@emotion/react': '>=11.9.0'
       react: '>=16.8.0'
@@ -854,6 +925,17 @@ packages:
       csstype: registry.npmmirror.com/csstype/3.0.9
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@mantine/utils/6.0.14_react@18.2.0:
+    resolution: {integrity: sha512-se+3IXJsNj4wnLMlqc7LiBe74m+JLQJ5o3wEcDtFzaJEtEt1rtw/1q3xKuROkH3xEiauhxQgzsc4gj/AslHy2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mantine/utils/-/utils-6.0.14.tgz}
+    id: registry.npmmirror.com/@mantine/utils/6.0.14
+    name: '@mantine/utils'
+    version: 6.0.14
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: registry.npmmirror.com/react/18.2.0
     dev: false
 
   registry.npmmirror.com/@mantine/utils/6.0.17_react@18.2.0:
@@ -1341,7 +1423,7 @@ packages:
     version: 1.3.0
     dependencies:
       '@noble/curves': registry.npmmirror.com/@noble/curves/1.0.0
-      '@noble/hashes': registry.npmmirror.com/@noble/hashes/1.3.0
+      '@noble/hashes': registry.npmmirror.com/@noble/hashes/1.3.1
       '@scure/base': registry.npmmirror.com/@scure/base/1.1.1
     dev: false
 
@@ -1350,7 +1432,7 @@ packages:
     name: '@scure/bip39'
     version: 1.2.0
     dependencies:
-      '@noble/hashes': registry.npmmirror.com/@noble/hashes/1.3.0
+      '@noble/hashes': registry.npmmirror.com/@noble/hashes/1.3.1
       '@scure/base': registry.npmmirror.com/@scure/base/1.1.1
     dev: false
 
@@ -1549,12 +1631,6 @@ packages:
     dependencies:
       tslib: registry.npmmirror.com/tslib/2.6.0
 
-  registry.npmmirror.com/@tanstack/query-core/4.29.19:
-    resolution: {integrity: sha512-uPe1DukeIpIHpQi6UzIgBcXsjjsDaLnc7hF+zLBKnaUlh7jFE/A+P8t4cU4VzKPMFB/C970n/9SxtpO5hmIRgw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/query-core/-/query-core-4.29.19.tgz}
-    name: '@tanstack/query-core'
-    version: 4.29.19
-    dev: false
-
   registry.npmmirror.com/@tanstack/query-core/4.29.25:
     resolution: {integrity: sha512-DI4y4VC6Uw4wlTpOocEXDky69xeOScME1ezLKsj+hOk7DguC9fkqXtp6Hn39BVb9y0b5IBrY67q6kIX623Zj4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/query-core/-/query-core-4.29.25.tgz}
     name: '@tanstack/query-core'
@@ -1577,7 +1653,7 @@ packages:
       '@tanstack/query-persist-client-core': registry.npmmirror.com/@tanstack/query-persist-client-core/4.29.25
     dev: false
 
-  registry.npmmirror.com/@tanstack/react-query-persist-client/4.29.25_7kyvxzfz576pyluhditf2sarnm:
+  registry.npmmirror.com/@tanstack/react-query-persist-client/4.29.25_nfkg5mun7mrj5m5bz7n2yvl2vi:
     resolution: {integrity: sha512-Vm4E+iPZ7rPGfN0jhsK35vZ5EUFvKyE3Kg0uthlqmqmy2rzm43f1EIFpA1++j0dWST/swIOj3pfiSBxJ/6s5zA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/react-query-persist-client/-/react-query-persist-client-4.29.25.tgz}
     id: registry.npmmirror.com/@tanstack/react-query-persist-client/4.29.25
     name: '@tanstack/react-query-persist-client'
@@ -1586,14 +1662,14 @@ packages:
       '@tanstack/react-query': 4.29.25
     dependencies:
       '@tanstack/query-persist-client-core': registry.npmmirror.com/@tanstack/query-persist-client-core/4.29.25
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
     dev: false
 
-  registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-XiTIOHHQ5Cw1WUlHaD4fmVUMhoWjuNJlAeJGq7eM4BraI5z7y8WkZO+NR8PSuRnQGblpuVdjClQbDFtwxTtTUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/react-query/-/react-query-4.29.19.tgz}
-    id: registry.npmmirror.com/@tanstack/react-query/4.29.19
+  registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-c1+Ezu+XboYrdAMdusK2fTdRqXPMgPAnyoTrzHOZQqr8Hqz6PNvV9DSKl8agUo6nXX4np7fdWabIprt+838dLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/react-query/-/react-query-4.29.25.tgz}
+    id: registry.npmmirror.com/@tanstack/react-query/4.29.25
     name: '@tanstack/react-query'
-    version: 4.29.19
+    version: 4.29.25
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1604,7 +1680,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': registry.npmmirror.com/@tanstack/query-core/4.29.19
+      '@tanstack/query-core': registry.npmmirror.com/@tanstack/query-core/4.29.25
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
       use-sync-external-store: registry.npmmirror.com/use-sync-external-store/1.2.0_react@18.2.0
@@ -1880,7 +1956,7 @@ packages:
       - zod
     dev: false
 
-  registry.npmmirror.com/@wagmi/connectors/2.6.6_es43zxgk4ps5bvhk7wuearhw3e:
+  registry.npmmirror.com/@wagmi/connectors/2.6.6_hanaixqoqf52v6zxnxjzvuvaqq:
     resolution: {integrity: sha512-/o1c/TCivQs8DOAUOcQvY2UIt3p2mWOAHi39D0LC74+ncpXzLC5/gyaWU38qnTxPM8s/PmTmaWDgz+VhICXrag==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@wagmi/connectors/-/connectors-2.6.6.tgz}
     id: registry.npmmirror.com/@wagmi/connectors/2.6.6
     name: '@wagmi/connectors'
@@ -1907,6 +1983,7 @@ packages:
       abitype: registry.npmmirror.com/abitype/0.8.7_typescript@5.1.6
       eventemitter3: registry.npmmirror.com/eventemitter3/4.0.7
       typescript: registry.npmmirror.com/typescript/5.1.6
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
       - bufferutil
@@ -1918,7 +1995,46 @@ packages:
       - zod
     dev: false
 
-  registry.npmmirror.com/@wagmi/core/1.3.7_i5n5dea2j27pemvkl7j4yxbax4:
+  registry.npmmirror.com/@wagmi/connectors/2.6.6_nktrqwxxlo4pdumnkspji5hvzu:
+    resolution: {integrity: sha512-/o1c/TCivQs8DOAUOcQvY2UIt3p2mWOAHi39D0LC74+ncpXzLC5/gyaWU38qnTxPM8s/PmTmaWDgz+VhICXrag==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@wagmi/connectors/-/connectors-2.6.6.tgz}
+    id: registry.npmmirror.com/@wagmi/connectors/2.6.6
+    name: '@wagmi/connectors'
+    version: 2.6.6
+    peerDependencies:
+      '@wagmi/chains': '>=1.3.0'
+      typescript: '>=5.0.4'
+      viem: '>=0.3.35'
+    peerDependenciesMeta:
+      '@wagmi/chains':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@coinbase/wallet-sdk': registry.npmmirror.com/@coinbase/wallet-sdk/3.7.1
+      '@ledgerhq/connect-kit-loader': registry.npmmirror.com/@ledgerhq/connect-kit-loader/1.1.0
+      '@safe-global/safe-apps-provider': registry.npmmirror.com/@safe-global/safe-apps-provider/0.17.1_typescript@5.1.6
+      '@safe-global/safe-apps-sdk': registry.npmmirror.com/@safe-global/safe-apps-sdk/8.0.0_typescript@5.1.6
+      '@wagmi/chains': registry.npmmirror.com/@wagmi/chains/1.6.0_typescript@5.1.6
+      '@walletconnect/ethereum-provider': registry.npmmirror.com/@walletconnect/ethereum-provider/2.9.0_@walletconnect+modal@2.5.9
+      '@walletconnect/legacy-provider': registry.npmmirror.com/@walletconnect/legacy-provider/2.0.0
+      '@walletconnect/modal': registry.npmmirror.com/@walletconnect/modal/2.5.9_react@18.2.0
+      '@walletconnect/utils': registry.npmmirror.com/@walletconnect/utils/2.9.0
+      abitype: registry.npmmirror.com/abitype/0.8.7_typescript@5.1.6
+      eventemitter3: registry.npmmirror.com/eventemitter3/4.0.7
+      typescript: registry.npmmirror.com/typescript/5.1.6
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
+    transitivePeerDependencies:
+      - '@react-native-async-storage/async-storage'
+      - bufferutil
+      - encoding
+      - lokijs
+      - react
+      - supports-color
+      - utf-8-validate
+      - zod
+    dev: false
+
+  registry.npmmirror.com/@wagmi/core/1.3.7_6cove7vqcs6tkru3ysikw7vh3e:
     resolution: {integrity: sha512-ens31RwICdrbRanNYwlJs0DAw/LOqUPQm6qXsmEciOENT4w+7pC959LXU9xfaOADWVMekeLDmRqAGCszTNIXAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@wagmi/core/-/core-1.3.7.tgz}
     id: registry.npmmirror.com/@wagmi/core/1.3.7
     name: '@wagmi/core'
@@ -1931,10 +2047,42 @@ packages:
         optional: true
     dependencies:
       '@wagmi/chains': registry.npmmirror.com/@wagmi/chains/1.5.0_typescript@5.1.6
-      '@wagmi/connectors': registry.npmmirror.com/@wagmi/connectors/2.6.6_es43zxgk4ps5bvhk7wuearhw3e
+      '@wagmi/connectors': registry.npmmirror.com/@wagmi/connectors/2.6.6_hanaixqoqf52v6zxnxjzvuvaqq
       abitype: registry.npmmirror.com/abitype/0.8.7_typescript@5.1.6
       eventemitter3: registry.npmmirror.com/eventemitter3/4.0.7
       typescript: registry.npmmirror.com/typescript/5.1.6
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
+      zustand: registry.npmmirror.com/zustand/4.3.9_react@18.2.0
+    transitivePeerDependencies:
+      - '@react-native-async-storage/async-storage'
+      - bufferutil
+      - encoding
+      - immer
+      - lokijs
+      - react
+      - supports-color
+      - utf-8-validate
+      - zod
+    dev: false
+
+  registry.npmmirror.com/@wagmi/core/1.3.8_6cove7vqcs6tkru3ysikw7vh3e:
+    resolution: {integrity: sha512-OYSxikoMizqVnpSkFTwGE7PwFaz2k0PXteSiI0W2Mtk4j4sZzRFdP+9AWeDB6AYm0yU3WvgN1IATx0EEBKUe3w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@wagmi/core/-/core-1.3.8.tgz}
+    id: registry.npmmirror.com/@wagmi/core/1.3.8
+    name: '@wagmi/core'
+    version: 1.3.8
+    peerDependencies:
+      typescript: '>=5.0.4'
+      viem: '>=0.3.35'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@wagmi/chains': registry.npmmirror.com/@wagmi/chains/1.6.0_typescript@5.1.6
+      '@wagmi/connectors': registry.npmmirror.com/@wagmi/connectors/2.6.6_nktrqwxxlo4pdumnkspji5hvzu
+      abitype: registry.npmmirror.com/abitype/0.8.7_typescript@5.1.6
+      eventemitter3: registry.npmmirror.com/eventemitter3/4.0.7
+      typescript: registry.npmmirror.com/typescript/5.1.6
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
       zustand: registry.npmmirror.com/zustand/4.3.9_react@18.2.0
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
@@ -2392,7 +2540,7 @@ packages:
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/@web3modal/ethereum/2.7.0_viem@1.3.0:
+  registry.npmmirror.com/@web3modal/ethereum/2.7.0_6xilvirq2usfrz5j2v5kkh6uxa:
     resolution: {integrity: sha512-JudpjRjpt5ZGIxmdzG2abi4SDkQqu0HFXa7CtQ2KYjTrXRB4GI+5WDxsjCtl4G8K84Tx23G4YPr0CiX+LdL8gQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@web3modal/ethereum/-/ethereum-2.7.0.tgz}
     id: registry.npmmirror.com/@web3modal/ethereum/2.7.0
     name: '@web3modal/ethereum'
@@ -2401,6 +2549,7 @@ packages:
       '@wagmi/core': '>=1'
       viem: '>=1'
     dependencies:
+      '@wagmi/core': registry.npmmirror.com/@wagmi/core/1.3.8_6cove7vqcs6tkru3ysikw7vh3e
       viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
     dev: false
 
@@ -3322,6 +3471,25 @@ packages:
       path-key: registry.npmmirror.com/path-key/3.1.1
       shebang-command: registry.npmmirror.com/shebang-command/2.0.0
       which: registry.npmmirror.com/which/2.0.2
+
+  registry.npmmirror.com/crossbell/1.4.0_typescript@5.1.6:
+    resolution: {integrity: sha512-lRQV5RRIMt4kGqYHGEBT5itdOr11cAmyBccUbZfbbq/PvZxMdyXUkXb03Z2NNVX/mgigNxq+2rYAp8iTVxFBfQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/crossbell/-/crossbell-1.4.0.tgz}
+    id: registry.npmmirror.com/crossbell/1.4.0
+    name: crossbell
+    version: 1.4.0
+    engines: {node: '>=16.14.0'}
+    dependencies:
+      '@crossbell/ipfs-fetch': registry.npmmirror.com/@crossbell/ipfs-fetch/0.0.19
+      async-retry: registry.npmmirror.com/async-retry/1.3.3
+      eip1193-types: registry.npmmirror.com/eip1193-types/0.2.1
+      p-limit: registry.npmmirror.com/p-limit/3.1.0
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
 
   registry.npmmirror.com/crossbell/1.4.2_typescript@5.1.6:
     resolution: {integrity: sha512-6wS6X3r3zWjQOL1v2dMJ8hIfzCl1hQ5AoVV6nFGngKuk+LPoZeZjrrD7KTRueFqwE9F6oJmg7S6vHJNYu3STqQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/crossbell/-/crossbell-1.4.2.tgz}
@@ -7393,7 +7561,7 @@ packages:
       - zod
     dev: false
 
-  registry.npmmirror.com/wagmi/1.3.8_i4rjfizg7pnsmg7p6yi76gfzdq:
+  registry.npmmirror.com/wagmi/1.3.8_bpv3i7fim52ykx2flbxcqwwscq:
     resolution: {integrity: sha512-RCfcE+Q+yhyfq7j5u7KQRz2KXUMAMexu0Y2kr8z81t4fmDlU5C+OEVQ6NFoUzAzEsJpznpQjZgsfpHKeFm17hQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/wagmi/-/wagmi-1.3.8.tgz}
     id: registry.npmmirror.com/wagmi/1.3.8
     name: wagmi
@@ -7407,13 +7575,14 @@ packages:
         optional: true
     dependencies:
       '@tanstack/query-sync-storage-persister': registry.npmmirror.com/@tanstack/query-sync-storage-persister/4.29.25
-      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.19_biqbaboplfbrettd7655fr4n2y
-      '@tanstack/react-query-persist-client': registry.npmmirror.com/@tanstack/react-query-persist-client/4.29.25_7kyvxzfz576pyluhditf2sarnm
-      '@wagmi/core': registry.npmmirror.com/@wagmi/core/1.3.7_i5n5dea2j27pemvkl7j4yxbax4
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.29.25_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query-persist-client': registry.npmmirror.com/@tanstack/react-query-persist-client/4.29.25_nfkg5mun7mrj5m5bz7n2yvl2vi
+      '@wagmi/core': registry.npmmirror.com/@wagmi/core/1.3.7_6cove7vqcs6tkru3ysikw7vh3e
       abitype: registry.npmmirror.com/abitype/0.8.7_typescript@5.1.6
       react: registry.npmmirror.com/react/18.2.0
       typescript: registry.npmmirror.com/typescript/5.1.6
       use-sync-external-store: registry.npmmirror.com/use-sync-external-store/1.2.0_react@18.2.0
+      viem: registry.npmmirror.com/viem/1.3.0_typescript@5.1.6
     transitivePeerDependencies:
       - '@react-native-async-storage/async-storage'
       - bufferutil

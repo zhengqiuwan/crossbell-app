@@ -4,6 +4,7 @@ import React from "react";
 import { Header } from "@/components/header";
 import { Connection } from "@/components/connection";
 import { usePostNote } from "@crossbell/connect-kit";
+import NoteList from "@/components/notelist";
 
 export default function IndexPage() {
   const postNote = usePostNote();
@@ -25,6 +26,7 @@ export default function IndexPage() {
       >
         Post Note
       </button>
+      <NoteList></NoteList>
     </div>
   );
 }
